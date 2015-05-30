@@ -1,8 +1,6 @@
 (function (factory) {
     'use strict';
-
 	factory(window.jQuery);
-
 }(function (jQuery) {
     'use strict';
 
