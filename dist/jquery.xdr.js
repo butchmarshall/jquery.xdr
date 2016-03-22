@@ -4,13 +4,10 @@
   } else if (typeof exports === 'object') {
     module.exports = factory(require('jquery'));
   } else {
-    root.jQuery.xdr = factory(root.jquery);
+    root.jQuery.XDR = factory(root.jQuery);
   }
-}(this, function(jquery) {
-(function (factory) {
-    'use strict';
-	factory(window.jQuery);
-}(function (jQuery) {
+}(this, function(jQuery) {
+(function (jQuery) {
     'use strict';
 
 	jQuery.XDR = (function() {
@@ -152,6 +149,8 @@
 	})();
 
 	jQuery.XDR.domain = window.location.protocol+"//"+window.location.host;
-}));
-return jQuery.xdr;
+
+	return jQuery.XDR;
+})(jQuery);
+return jQuery.XDR;
 }));

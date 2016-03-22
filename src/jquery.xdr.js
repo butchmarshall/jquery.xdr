@@ -1,7 +1,4 @@
-(function (factory) {
-    'use strict';
-	factory(window.jQuery);
-}(function (jQuery) {
+(function (jQuery) {
     'use strict';
 
 	jQuery.XDR = (function() {
@@ -143,4 +140,6 @@
 	})();
 
 	jQuery.XDR.domain = window.location.protocol+"//"+window.location.host;
-}));
+
+	return jQuery.XDR;
+})(jQuery);

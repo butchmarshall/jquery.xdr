@@ -22,15 +22,18 @@ gulp.task('minify', function() {
 		dependencies: function() {
 			return [
 				{
-					name: 'jquery'
+					name: 'jQuery',
+					cjs: 'jquery',
+					amd: 'jquery',
+					global: 'jQuery'
 				}
 			]
 		},
 		exports: function() {
-			return 'jQuery.xdr';
+			return 'jQuery.XDR';
 		},
 		namespace: function() {
-			return 'jQuery.xdr';
+			return 'jQuery.XDR';
 		}
 	}))
 	.pipe(gulp.dest('./dist/'))
